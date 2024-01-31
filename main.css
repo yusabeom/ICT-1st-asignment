@@ -1,1 +1,111 @@
 @import url(./common.css);
+
+
+header {
+    color: #fff;
+    font-size: 18px;
+    z-index: 9999;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo>a {
+    width: 15%;
+    margin: 30px;
+
+}
+
+header .logo .head-center li {
+    padding: 0 10px;
+}
+
+header .logo ul {
+    display: flex;
+    align-items: center;
+}
+
+header .logo ul li {
+    margin: 0 10px;
+}
+
+header ul.header-end {
+    font-size: 0.7em;
+
+}
+
+ul li.line {
+    width: 60px;
+    border-right: 1px solid #fff;
+}
+
+.main .main-image {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+.main .main-image img.back {
+    position: absolute;
+    width: 100%;
+    top: -50px;
+
+}
+.main .main-txt {
+    position: absolute;
+    left: 13.5%;
+    top: 40%;
+    color: #fff;
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .main-txt p {
+    margin-bottom: 30px;
+}
+.main .main-txt h3 {
+    font-size: 3.2em;
+    line-height: 1.3;
+}
+
+.main .under-line {
+    color: #fff;
+    position: absolute;
+    background: rgba(12, 76, 163, 0.9);
+    
+    display: flex;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    padding: 10px 50px;
+    align-items: center;
+    justify-content: space-between;
+    }
+.main .under-line p {
+width: 15%;
+letter-spacing: -1px;
+margin: 25px 0;
+}    
+
+.under-line li.slide-play {
+   display: flex;
+    align-items: center;
+    width: 200px;
+    font-size: 1.5em;
+    
+    
+    
+    }
+.slide-play p {
+    padding: 0 50px;
+}    
+    
