@@ -1,0 +1,28 @@
+@import url(common.css);
+
+body {
+    font-family: 'NanumSquare', 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper .summary {
+    width: 100%;
+    height: 30vh;
+    background: teal;
+    position: relative;
+}
+.wrapper .summary h3 {
+    color: #fff;
+    font-size: 40px;
+
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    
+}
