@@ -23,6 +23,9 @@ section .business {
   
 }
 
+/*intro content*/
+
+
 section .business .intro {
   /* background: violet; */
   width: 80%;
@@ -45,7 +48,7 @@ section .business .intro p {
 }
 
 section .business .field {
-  background: aqua;
+  /* background: aqua; */
   width: 72%;
   display: flex;
   justify-content: space-around;
@@ -55,32 +58,56 @@ section .business .field {
 }
 
 
-section .business .field li a:hover{
-  width: 100%;
+/*field img */
+
+section .business .field li .img-box {
+  background: red;
+  overflow: hidden;
   
-  background: hsl(240, 100%, 50%, 0.5);
-   
+}
+
+section .business .field li .img-box img{
+  transition: 1.1s;
+  
+}
+
+section .business .field li .img-box img:hover {
+  transform: scale(1.2);
+  
+}
+
+section .business .field li span {
+  /* background: orange; */
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+section .business .field li .img-box a:hover .detail {
+  animation: show 1s both;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
-/* section .business .field li a .detail::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  
-  
-  transition: 0.6s;
-} */
 
 
 
 
 
-section .business .field li a p {
- padding: 17px;
- text-align: center;
-}
+
+/*detail */
+
 
 section .business .field li .detail {
   background: orange;
@@ -88,6 +115,17 @@ section .business .field li .detail {
   color: #fff;
   
 }
+
+
+
+
+
+
+
+
+
+
+
 
 section .business .field li .detail h3 {
   font-size: 1.2em;
@@ -100,6 +138,12 @@ section .business .field li .detail p {
    font-weight: 500;
    font-size: 13px;
 }
+
+
+
+
+
+
 
 
 
