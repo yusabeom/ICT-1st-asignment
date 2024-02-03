@@ -163,6 +163,53 @@ ul li.line {
     opacity: 0.2;
 }
 
+/* main6 style */
+#main6 {
+    padding: 150px 0;
+}
+#main6 p {
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#main6 ul {
+    margin: 0 auto;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+}
+#main6 ul li {
+    border: 1px solid black;
+    width: 49.2%;
+    height: 300px;
+    color: #fff;
+    padding: 74px 44px 103px;
+    font-size: 15px;
+    text-shadow: 4px 4px  10px black;
+}
+#main6 ul li a h2{
+font-size: 30px;
+font-weight: 700;
+margin-top: 15px;
+}
+#main6 ul li a h3 {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+
+#main6 ul li:first-child {
+    background-image: url(./img/people-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+ #main6 ul li:last-child {
+    background-image: url(./img/people-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+
 /* main7 style */
 #main7 {
     background: rgba(235, 235, 235);
