@@ -6,20 +6,30 @@
 
 section {
   background: #f6f5f5;
-  
+  width: 100%;
+
 }
 
-
-.content {
+.business {
   background: #fff;
   width: 96%;
   padding-bottom: 170px;
-  
-  
+  position: relative;
+}
+
+.business .line {
+  content: '';
+  width: 50%;
+  height: 50px;
+  border-right: 1px solid black;
+
+  position: absolute;
+  bottom: 0;
+  right: 47.9%;
 
 }
 
-.content .intro {
+.business .intro {
   /* background: orange; */
   padding-top: 150px;
   padding-left: 57px;
@@ -27,97 +37,96 @@ section {
   text-align: center;
 }
 
-.content .intro h1 {
+.business .intro h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.content .intro p {
+.business .intro p {
   font-size: 13.5px;
 }
 
 
 /*img*/
 
-.content ul {
-  /* background: violet; */
+.business ul {
   width: 100%;
   display: flex;
   justify-content: center;
 
-  /* padding-left: 45px; */
-
 }
 
 
-.content ul {
+.business ul {
   margin-left: 20px;
 }
 
-.content ul li {
+.business ul li {
   height: 440px;
-  
+
   /* overflow: hidden; */
   position: relative;
 }
-.content ul li a p {
+
+.business ul li a p {
   padding: 20px;
 }
 
 
-.content ul li a .img-box1 {
+.business ul li a .img-box1 {
   margin-left: 10px;
   overflow: hidden;
 }
-.content ul li a .img-box2 {
+
+.business ul li a .img-box2 {
   margin-left: 10px;
   overflow: hidden;
 }
-.content ul li a .img-box3 {
+
+.business ul li a .img-box3 {
   margin-left: 10px;
   overflow: hidden;
 }
-.content ul li a .img-box4 {
+
+.business ul li a .img-box4 {
   margin-left: 10px;
   overflow: hidden;
 }
 
 
 
-.content ul li a img {
+.business ul li a img {
   transition: transform 0.3s ease;
 
 }
 
 
 
-.content ul li a:hover img{
+.business ul li a:hover img {
   transform: scale(1.1);
   transition: 0.8s;
 
 }
 
 
-.content ul li p{
+.business ul li p {
   content: '';
   width: 97%;
   height: 442px;
-  background: #375bebd2;
+  background: #3354d7d2;
   margin-left: 10px;
-  
+
 
   position: absolute;
   top: 0;
 
   opacity: 0;
-  
-  
+
+
 }
 
-.content ul li a:hover p {
+.business ul li a:hover p {
   animation: back-show both;
-
-  
 
 }
 
@@ -132,10 +141,10 @@ section {
 }
 
 
-.content ul li .text {
+.business ul li .text {
   color: #fff;
   text-align: left;
-  
+
 
 
   position: absolute;
@@ -147,7 +156,7 @@ section {
   z-index: 999;
 }
 
-.content ul li a:hover .text {
+.business ul li a:hover .text {
   animation: show-name 1s both;
 }
 
@@ -163,14 +172,14 @@ section {
   }
 }
 
-.content ul li .text h3 {
+.business ul li .text h3 {
   font-size: 25px;
   font-weight: bold;
   padding-bottom: 40px;
   letter-spacing: -2.5px;
 }
 
-.content ul li .text span {
+.business ul li .text span {
   width: 88%;
   font-size: 14px;
   font-weight: 500;
@@ -178,9 +187,90 @@ section {
   letter-spacing: -0.7px;
 }
 
-.content ul li a  h1 {
-  
+.business ul li a h1 {
+
   margin-left: 10px;
   text-align: center;
   padding: 20px;
+}
+
+
+
+/*news sytyle*/
+
+
+.news {
+  background: #f6f5f5;
+  width: 100%;
+}
+
+ .news .line {
+  content: '';
+  width: 50%;
+  height: 50px;
+  border-right: 1px solid black;
+
+  
+}
+.news h1 {
+  /* background: orange; */
+  font-size: 2.5em;
+  padding-top: 130px;
+  padding-bottom: 30px;
+  text-align: center;
+
+}
+
+.news ul {
+  margin: 10px 110px;
+  
+}
+
+.news ul li {
+  background: #fff;
+  padding: 30px 40px;
+  margin-top: 10px;
+  line-height: 2;
+  
+
+  position: relative;
+}
+.news ul li:hover {
+  border: 1px solid #ccc;
+
+  animation: border ;
+}
+
+@keyframes border {
+  0% {
+  
+  }
+  
+}
+
+
+
+.news ul li a h3 {
+  font-size: 25px;
+}
+
+.news ul li a em {
+  position: absolute;
+
+  top: 50px;
+  right: 100px;
+  
+}
+
+.news ul li a i {
+  position: absolute;
+
+  top: 63px;
+  right: 50px;
+}
+
+.news ul li a p {
+  color: #4e4e4e;
+  font-size: 13px;
+
 }
