@@ -5,20 +5,24 @@
 
 
 section {
-  background: black;
-  height: 100vh;
+  background: #f6f5f5;
+  
 }
 
 
 .content {
-  background: red;
-  width: 95%;
-  height: 90vh;
+  background: #fff;
+  width: 96%;
+  padding-bottom: 170px;
+  
+  
+
 }
 
 .content .intro {
   /* background: orange; */
   padding-top: 150px;
+  padding-left: 57px;
   margin: 0 auto 50px;
   text-align: center;
 }
@@ -29,38 +33,154 @@ section {
 }
 
 .content .intro p {
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
+
+/*img*/
+
 .content ul {
-  background: violet;
+  /* background: violet; */
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+
+  /* padding-left: 45px; */
+
+}
+
+
+.content ul {
+  margin-left: 20px;
 }
 
 .content ul li {
-  background: orange;
+  height: 440px;
+  
+  /* overflow: hidden; */
+  position: relative;
+}
+.content ul li a p {
+  padding: 20px;
+}
+
+
+.content ul li a .img-box1 {
+  margin-left: 10px;
+  overflow: hidden;
+}
+.content ul li a .img-box2 {
+  margin-left: 10px;
+  overflow: hidden;
+}
+.content ul li a .img-box3 {
+  margin-left: 10px;
+  overflow: hidden;
+}
+.content ul li a .img-box4 {
+  margin-left: 10px;
+  overflow: hidden;
 }
 
 
 
+.content ul li a img {
+  transition: transform 0.3s ease;
+
+}
 
 
 
+.content ul li a:hover img{
+  transform: scale(1.1);
+  transition: 0.8s;
+
+}
 
 
+.content ul li p{
+  content: '';
+  width: 97%;
+  height: 442px;
+  background: #375bebd2;
+  margin-left: 10px;
+  
+
+  position: absolute;
+  top: 0;
+
+  opacity: 0;
+  
+  
+}
+
+.content ul li a:hover p {
+  animation: back-show both;
+
+  
+
+}
+
+@keyframes back-show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 
+.content ul li .text {
+  color: #fff;
+  text-align: left;
+  
 
 
+  position: absolute;
+  left: 60px;
+  top: 30%;
 
+  opacity: 0;
 
+  z-index: 999;
+}
 
+.content ul li a:hover .text {
+  animation: show-name 1s both;
+}
 
+@keyframes show-name {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
+.content ul li .text h3 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  letter-spacing: -2.5px;
+}
 
+.content ul li .text span {
+  width: 88%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.7px;
+}
 
-
-
-
+.content ul li a  h1 {
+  
+  margin-left: 10px;
+  text-align: center;
+  padding: 20px;
+}
