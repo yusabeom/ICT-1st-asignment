@@ -172,6 +172,285 @@ ul li.line {
     right: 89px;
     opacity: 0.2;
 }
+section.content1 {
+    background: #f6f5f5;
+    width: 100%;
+    font-family: 'NanumSquare','Nanum Gothic';
+  
+  }
+  
+  
+  /*business style*/
+  
+  
+  .business {
+    background: #fff;
+    width: 96%;
+    padding-bottom: 170px;
+    position: relative;
+  }
+  
+  .business .line {
+    content: '';
+    width: 50%;
+    height: 50px;
+    border-right: 1px solid black;
+  
+    position: absolute;
+    bottom: 0;
+    right: 47.9%;
+  
+  }
+  
+  .business .intro {
+  
+    padding-top: 150px;
+    padding-left: 57px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  
+  .business .intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .business .intro p {
+    font-size: 13.5px;
+  }
+  
+  
+  /*business img */
+  
+  .business ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  
+  .business ul {
+    margin-left: 20px;
+  }
+  
+  .business ul li {
+    height: 440px;
+  
+    position: relative;
+  }
+  
+  .business ul li a p {
+    padding: 20px;
+  }
+  
+  
+  .business ul li a .img-box1 {
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  .business ul li a .img-box2 {
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  .business ul li a .img-box3 {
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  .business ul li a .img-box4 {
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  
+  
+  .business ul li a img {
+    transition: transform 1.5s ease;
+  
+  }
+  
+  
+  
+  .business ul li a:hover img {
+    transform: scale(1.1);
+    
+  
+  }
+  
+  
+  .business ul li p {
+    content: '';
+    width: 97%;
+    height: 442px;
+    background: #3354d7d2;
+    margin-left: 10px;
+    transition: transform 1.5s;
+  
+  
+    position: absolute;
+    top: 0;
+  
+    opacity: 0;
+  
+  
+  }
+  
+  .business ul li a:hover p {
+    animation: back-show 2s both;
+   
+  
+  }
+  
+  @keyframes back-show {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .business ul li .text {
+    color: #fff;
+    text-align: left;
+    transition: transform 2s ease;
+  
+  
+  
+    position: absolute;
+    left: 60px;
+    top: 30%;
+  
+    opacity: 0;
+  
+    z-index: 999;
+  }
+  
+  .business ul li a:hover .text {
+    animation: show-name 1s both;
+  }
+  
+  
+  @keyframes show-name {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .business ul li .text h3 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    letter-spacing: -2.5px;
+  }
+  
+  .business ul li .text span {
+    width: 88%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.7px;
+  }
+  
+  .business ul li a h1 {
+  
+    margin-left: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  
+  /*news style*/
+  
+  
+  .news {
+    background: #f6f5f5;
+    width: 100%;
+    font-family: 'NanumSquare','Nanum Gothic';
+  }
+  
+  .news .line {
+    content: '';
+    width: 50%;
+    height: 50px;
+    border-right: 1px solid black;
+  
+  }
+  
+  .news h1 {
+   
+    font-size: 2.5em;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    text-align: center;
+  
+  }
+  
+  .news ul {
+    margin: 10px 110px 150px;
+  
+  }
+  
+  .news ul li {
+    background: #fff;
+    padding: 25px 40px;
+    margin-top: 10px;
+    line-height: 2;
+    letter-spacing: -1px;
+  
+  
+    position: relative;
+  }
+  
+  .news ul li:hover {
+  
+    border-top: 1px solid #6363f4;
+    border-bottom: 2px solid#6363f4;
+    border-left: 1px solid #6363f4;
+    border-right: 1px solid #6363f4;
+  }
+  
+  
+  
+  .news ul li a h3 {
+    font-size: 22px;
+  }
+  
+  .news ul li a em {
+    font-size: 13.5px;
+    position: absolute;
+  
+    top: 50px;
+    right: 96px;
+  
+  }
+  
+  .news ul li a i {
+    color: rgba(0, 0, 0, 0.344);
+    font-weight: 300;
+    position: absolute;
+  
+    top: 57px;
+    right: 50px;
+  }
+  
+  .news ul li a p {
+    color: #4e4e4e;
+    font-size: 13px;
+  }
+
 /* main4 style */
 #main4 {
     background-image: url(./img/people-6.jpg);
@@ -385,8 +664,12 @@ footer {
     background: #28282e;
     font-size: 15px;
     line-height: 1.5;
-    color: #fff;
-}
+    color: #fff;}
+
+
+
+
+
 
 
 
@@ -461,5 +744,4 @@ footer .footer-list-hidden {
 
 footer .footer-list-hidden li {
     padding-left: 30px;
-    margin: 20px 0;
-}
+    margin: 20px 0;}
