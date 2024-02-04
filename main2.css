@@ -23,10 +23,12 @@ body {
     position: relative;
     background-attachment: fixed;
 }
+
 .wrapper .summary h3 {
     color: #fff;
     font-size: 40px;
 }
+
 .wrapper .summary .gnb {
     display: flex;
     bottom: 0%;
@@ -61,7 +63,7 @@ body {
 
 /* start idea */
 
-.wrapper .idea  {
+.wrapper .idea {
     margin: 50px auto 0px;
     font-size: 16px;
     width: 80%;
@@ -127,10 +129,15 @@ body {
 } */
 
 @keyframes show {
-    0% {width: 0%;
-    opacity: 0;}
-100% {width: 100%;
-opacity: 1;}
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
 }
 
 .wrapper .idea .icon .menu h4 {
@@ -245,7 +252,7 @@ opacity: 1;}
     margin-bottom: 100px;
 }
 
-.wrapper .field .art .sample .detail a{
+.wrapper .field .art .sample .detail a {
     font-size: 14px;
     line-height: 42px;
     height: 44px;
@@ -319,4 +326,205 @@ opacity: 1;}
 
 .wrapper .main-performance .photo .sample .detail p {
     font-size: 16px;
+}
+
+
+
+/*사업실적 style*/
+
+section.perform {
+
+    width: 80%;
+    margin: 150px auto;
+}
+
+section.perform .title {
+
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.perform .title .view {
+    display: flex;
+    font-size: 30px;
+    border: 1px solid black;
+
+}
+
+section.perform .title .view p {
+    padding: 10px 15px;
+}
+
+section.perform .title .view p:first-child {
+    border-right: 1px solid black;
+
+}
+
+section.perform .title h3 {
+    font-size: 45px;
+    padding-left: 200px;
+    font-weight: 400;
+
+}
+
+section.perform .title input {
+    width: 300px;
+    height: 56.4px;
+    border-style: none;
+    background: #e6e6e674;
+
+}
+
+
+
+section.perform .select-menu {
+    display: flex;
+
+
+}
+
+
+section.perform .select1 {
+    font-size: 18px;
+    width: 25%;
+
+
+}
+
+section.perform .select1 .main1 {
+    border: 1px solid black;
+    padding: 20px 15px;
+    
+}
+
+section.perform .select1 .main2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 15px;
+}
+
+section.perform .select1 .main3 {
+    border: 1px solid black;
+    padding: 20px 15px;
+}
+
+section.perform .select1 .main4 {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 15px;
+}
+
+section.perform .select1 .main1 span {
+    padding-left: 140px;
+}
+
+section.perform .select1 .main2 span {
+    padding-left: 45px;
+}
+
+section.perform .select1 .main3 span {
+    padding-left: 120px;
+}
+
+section.perform .select1 .main4 span {
+    padding-left: 150px;
+}
+
+section.perform .select1 ul {
+    height: 350px;
+   overflow: auto;
+   
+   
+
+
+}
+
+section.perform .select1 ul li {
+    color: #8e8d8d;
+    font-size: 14px;
+    padding: 15px;
+    
+}
+
+section.perform .select1 ul li a:hover {
+    color: #000;
+}
+
+
+
+section.perform .build {
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section.perform .build ul li:first-child {
+    position: relative;
+   
+}
+section.perform .build ul li:first-child .tag1{
+    background: #0c4ba3a4;
+    padding: 15px 15px;
+    color: #fff;
+
+    position: absolute;
+    top: 0;
+}
+section.perform .build ul li:first-child .tag2{
+    background: #222222bf;
+    padding: 15px 15px;
+    color: #fff;
+    
+    position: absolute;
+    top: 0;
+    left: 79px;
+}
+
+section.perform .build ul li:first-child .tag3{
+    background: #6db6aab7;
+    padding: 15px 15px;
+    color: #fff;
+
+    position: absolute;
+    top: 0;
+}
+
+
+
+
+
+section.perform .build ul li img {
+    width: 390px;
+    height: 390px;
+}
+
+
+
+section.perform .build ul li:last-child {
+    margin: 20px 0 30px;
+}
+
+section.perform .build ul li:last-child h1 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+section.perform .build ul li:last-child p {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+
+section.perform .pages {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;
 }
