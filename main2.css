@@ -74,7 +74,7 @@ ul li.line {
 .wrapper .summary {
     width: 100%;
     height: 280px;
-    background: url(./img2/sub-business-pc.jpg);
+    background: url(./img2/sub-business-pc.jpg) 50% 108px no-repeat;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -288,12 +288,6 @@ justify-content: center;}
     background: #fff url(./img2/23.PNG) no-repeat right / cover;
 }
 
-.wrapper .field .art .sample .section {
-    background-color: turquoise;
-    z-index: 10;
-}
-
-
 .wrapper .field .art .sample .title {
     color: #0c4ca3;
     font-weight: 100;
@@ -354,8 +348,9 @@ justify-content: center;}
     height: 38px;
     line-height: 38px;
     border: 1px solid #dbdbdb;
+    border-radius: 2px;
     font-weight: 600;
-    padding: 7px 15px;
+    padding: 10px 27px;
 }
 
 .wrapper .main-performance .photo {
