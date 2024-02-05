@@ -88,11 +88,13 @@ ul li.line {
     font-size: 40px;
 }
 
+
 .wrapper .summary .gnb {
     display: flex;
     bottom: 0%;
     font-size: 30px;
     width: 80%;
+    max-width: 1085px;
 
     position: absolute;
 }
@@ -137,6 +139,7 @@ ul li.line {
 .wrapper .idea .remote {
     padding: 30px 0 50px;
     color: #666;
+    margin: 0 70px;
 }
 
 .wrapper .idea .remote a .lnr em {
@@ -169,34 +172,31 @@ ul li.line {
 
 .wrapper .idea .icon {
     display: flex;
-}
+justify-content: center;}
 
 .wrapper .idea .icon .menu {
-    width: 36%;
+    width: 31%;
     padding: 90px 0;
     background-color: rgba(255, 190, 70, 0.1);
     border-radius: 50%;
+    animation: grow 0.4s ease-in-out both;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .wrapper .idea .icon .menu:nth-child(2) {
     margin: 0 -30px;
+    animation: grow 0.4s ease-in-out 0.1s both;
 }
-
-/* .wrapper .idea .icon .menu::before {
-    opacity: 1;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-} */
-
-@keyframes show {
-    0% {
-        width: 0%;
-        opacity: 0;
-    }
-
-    100% {
-        width: 100%;
-        opacity: 1;
-    }
+.wrapper .idea .icon .menu:last-child {
+    animation: grow 0.4s ease-in-out 0.2s both;
 }
 
 .wrapper .idea .icon .menu h4 {
@@ -247,7 +247,6 @@ ul li.line {
     overflow: hidden;
     height: 900px;
     margin-top: 150px;
-    position: relative;
     background: url(./img2/bg-field.png);
     background-size: cover;
 }
@@ -257,7 +256,7 @@ ul li.line {
     padding: 118px 0 78px 0;
     font-size: 42px;
     line-height: 1;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .wrapper .field .art {
@@ -278,15 +277,15 @@ ul li.line {
 }
 
 .wrapper .field .art .sample:first-child {
-    background: #fff url(./img2/21.PNG) no-repeat right;
+    background: #fff url(./img2/21.PNG) no-repeat right / cover;
 }
 
 .wrapper .field .art .sample:nth-child(2) {
-    background: #fff url(./img2/22.PNG) no-repeat right;
+    background: #fff url(./img2/22.PNG) no-repeat right / cover;
 }
 
 .wrapper .field .art .sample:last-child {
-    background: #fff url(./img2/23.PNG) no-repeat right;
+    background: #fff url(./img2/23.PNG) no-repeat right / cover;
 }
 
 .wrapper .field .art .sample .section {
