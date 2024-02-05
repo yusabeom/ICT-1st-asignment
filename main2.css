@@ -618,7 +618,23 @@ section.perform .pages a strong {
     border: 1px solid #000;
     
 }
-
+.pages ul {
+    display: flex;
+    position: absolute;
+    right: 40%;
+    top: 495.5%;
+    
+}
+.pages ul li {
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+    
+}
+.page ul li:first-child {
+    border-right: 1px solid #fff;
+}
 /* footer style */
 footer {
 
