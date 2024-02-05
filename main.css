@@ -13,6 +13,7 @@ header {
 }
 
 
+
 header .logo {
     display: flex;
     justify-content: space-between;
@@ -599,6 +600,19 @@ section.content1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* bottom line */
+#bottom-line {
+  position: relative;
+}
+.bottom-line {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100px;
+  background: #000;
+  top: -50px;
+  left: 50%;
+}
 
 /* main7 style */
 #main7 {
@@ -739,9 +753,9 @@ footer .footer-list-hidden {
     font-size: 15px;
     overflow: auto;
 
-
 }
 
 footer .footer-list-hidden li {
     padding-left: 30px;
     margin: 20px 0;}
+
