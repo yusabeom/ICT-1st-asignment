@@ -34,6 +34,7 @@ body {
     bottom: 0%;
     font-size: 30px;
     width: 80%;
+    max-width: 1085px;
 
     position: absolute;
 }
@@ -78,6 +79,7 @@ body {
 .wrapper .idea .remote {
     padding: 30px 0 50px;
     color: #666;
+    margin: 0 70px;
 }
 
 .wrapper .idea .remote a .lnr em {
@@ -110,10 +112,10 @@ body {
 
 .wrapper .idea .icon {
     display: flex;
-}
+justify-content: center;}
 
 .wrapper .idea .icon .menu {
-    width: 36%;
+    width: 31%;
     padding: 90px 0;
     background-color: rgba(255, 190, 70, 0.1);
     border-radius: 50%;
@@ -185,7 +187,6 @@ body {
     overflow: hidden;
     height: 900px;
     margin-top: 150px;
-    position: relative;
     background: url(./img2/bg-field.png);
     background-size: cover;
 }
@@ -195,7 +196,7 @@ body {
     padding: 118px 0 78px 0;
     font-size: 42px;
     line-height: 1;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .wrapper .field .art {
