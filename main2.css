@@ -334,7 +334,8 @@ body {
 
 section.perform {
 
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     margin: 150px auto;
 }
 
@@ -349,22 +350,29 @@ section.perform .title {
 section.perform .title .view {
     display: flex;
     font-size: 30px;
-    border: 1px solid black;
+    
 
 }
 
 section.perform .title .view p {
-    padding: 10px 15px;
+    padding: 12px 15px;
 }
 
 section.perform .title .view p:first-child {
-    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 
 }
+section.perform .title .view p:last-child {
+    border: 1px solid #c2c1c1;
+    color: #c2c1c1;
+}
+
 
 section.perform .title h3 {
-    font-size: 45px;
-    padding-left: 200px;
+    font-size: 43px;
+    padding-left: 180px;
     font-weight: 400;
 
 }
@@ -374,28 +382,33 @@ section.perform .title input {
     height: 56.4px;
     border-style: none;
     background: #e6e6e674;
+    background-image: url(./img2/zoom1.png);
+    background-repeat: no-repeat;
+    background-position: right;
 
 }
+
+
 
 
 
 section.perform .select-menu {
     display: flex;
-
-
 }
 
 
 section.perform .select1 {
-    font-size: 18px;
+    font-size: 16px;
     width: 25%;
 
 
 }
 
 section.perform .select1 .main1 {
+    
     border: 1px solid black;
     padding: 20px 15px;
+    position: relative;
     
 }
 
@@ -403,11 +416,13 @@ section.perform .select1 .main2 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 20px 15px;
+    position: relative;
 }
 
 section.perform .select1 .main3 {
     border: 1px solid black;
     padding: 20px 15px;
+    position: relative;
 }
 
 section.perform .select1 .main4 {
@@ -415,28 +430,37 @@ section.perform .select1 .main4 {
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     padding: 20px 15px;
+    position: relative;
 }
 
 section.perform .select1 .main1 span {
-    padding-left: 140px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 section.perform .select1 .main2 span {
-    padding-left: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 section.perform .select1 .main3 span {
-    padding-left: 120px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 section.perform .select1 .main4 span {
-    padding-left: 150px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 section.perform .select1 ul {
     height: 350px;
    overflow: auto;
-   
+   display: none;
    
 
 
@@ -456,12 +480,13 @@ section.perform .select1 ul li a:hover {
 
 
 section.perform .build {
-    
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 50px;
+    
 }
+
 
 section.perform .build ul li:first-child {
     position: relative;
@@ -527,4 +552,14 @@ section.perform .pages {
     text-align: center;
     font-size: 18px;
     letter-spacing: 3px;
+}
+
+section.perform .pages a em{
+    border-bottom: 2px solid #000;
+}
+
+section.perform .pages a strong {
+    font-size: 20px;
+    border: 1px solid #000;
+    
 }
